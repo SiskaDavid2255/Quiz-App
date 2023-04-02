@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Questions</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="session-settings-div">
+
+      <p> Learn </p>
+      <form name="ipcForm">
+        <select name="method" id="method-select">
+          <option value="random">Random</option>
+          <option value="ordered">Ordered</option>
+          <option value="weakest">Weakest</option>
+          <option value="worst-ratio">Worst Ratio</option>
+          <option value="least-practiced">Least Practiced</option>
+        </select>
+        <input id="number" type="number" value="20" />
+        <button id="submit-form-btn" type="button">Start</button>
+      </form>
+
+      <p> Add Questions </p>
+      <button id="open-add-btn" type="button">Show/Hide</button>
+
+
+    </div>
+        
+    <div id="main-div" class="hidden"> 
+   
+      <div id="question-display-div"> 
+            <p id="question-counter"></p>
+            <p id="question-p">Text</p>
+            <input id="ans-box-1" class="checkbox hidden" type="checkbox" name="answers" value=1>   
+            <label id="ans-box-1-label" for="ans-box-1" class="hidden"></label><br>
+            <input id="ans-box-2" class="checkbox hidden" type="checkbox" name="answers" value=2>
+            <label id="ans-box-2-label" for="ans-box-2" class="hidden"></label><br>
+            <input id="ans-box-3" class="checkbox" type="checkbox" name="answers" value=3>
+            <label id="ans-box-3-label" for="ans-box-3" class="hidden"></label><br>
+            <input id="ans-box-4" class="checkbox hidden" type="checkbox" name="answers" value=4>
+            <label id="ans-box-4-label" for="ans-box-4" class="hidden"></label><br>
+            <input id="ans-box-5" class="checkbox hidden" type="checkbox" name="answers" value=5>
+            <label id="ans-box-5-label" for="ans-box-5" class="hidden"></label><br>
+            <button id="ok-btn"> Ok </button>
+            <button id="next-btn" disabled="true"> Next </button>
+        </div>
+
+        <div id="results-div">
+            <p id="final-good-ans-p"></p>
+            <p id="final-bad-ans-p"></p>
+            <p id="final-prc-p"></p>
+        </div>
+    
+      </div>
+    
+    <div id="bad-questions-list">
+
+    </div>
+
+    <div id="questions-add" class="hidden"> 
+
+      <textarea id="add-question-question" class="text-area-question" type="text" cols="50" rows="6"></textarea><br>
+
+      <input id="add-checkbox-1" class="checkbox" type="checkbox" value=1>   
+      <textarea id="add-answer-1" class="text-area-answer" cols="50" type="text"></textarea><br>
+
+      <input id="add-checkbox-2" class="checkbox" type="checkbox" value=2>
+      <textarea id="add-answer-2" class="text-area-answer" cols="50" type="text"></textarea><br>
+
+      <input id="add-checkbox-3" class="checkbox" type="checkbox" value=3>
+      <textarea id="add-answer-3" class="text-area-answer" cols="50" type="text"></textarea><br>
+
+      <input id="add-checkbox-4" class="checkbox" type="checkbox" value=4>
+      <textarea id="add-answer-4" class="text-area-answer" cols="50" type="text"></textarea><br>
+
+      <input id="add-checkbox-5" class="checkbox" type="checkbox" value=5>
+      <textarea id="add-answer-5" class="text-area-answer" cols="50" type="text"></textarea><br>
+      
+      <button id="add-btn"> Add </button><br>
+
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
+
+

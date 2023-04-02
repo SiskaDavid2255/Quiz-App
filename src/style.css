@@ -1,0 +1,47 @@
+.hidden{display: none}
+.correct-ans{color: green}
+.bad-ans{color: red}
+
+p{
+    font-size : clamp(1rem, 2vw, 3rem);
+    font-family: "Arial"
+}
+
+label{
+    font-size : clamp(1rem, 2vw, 3rem);
+    font-family: "Arial"
+
+}
+button{
+    font-size : clamp(1rem, 2vw, 3rem);
+    font-family: "Arial"
+
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+input{
+    font-size : clamp(1rem, 2vw, 3rem);
+
+
+}
+
+select{
+    font-size : clamp(1rem, 2vw, 3rem);
+
+
+}
+
+.text-area-question{
+    font-size : clamp(1rem, 2vw, 3rem);
+    font-family: "Arial"
+}
+
+.text-area-answer{
+    font-size : clamp(1rem, 2vw, 3rem);
+    font-family: "Arial"
+}

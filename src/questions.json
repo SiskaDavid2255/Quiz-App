@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Dummy question 1 ",
+    "answers": [
+      "A. Option A (Correct)",
+      "B. Option B ",
+      "C. Option C ",
+      "D. Option D"
+    ],
+    "correct": [
+      1
+    ],
+    "order": 0,
+    "strength": 10,
+    "bad": 0,
+    "good": 0,
+    "total": 0,
+    "ratio": 0
+  }, 
+   {
+    "question": "Dummy question 2 ",
+    "answers": [
+      "A. Option A  (Correct)",
+      "B. Option B  (Correct)",
+      "C. Option C ",
+      "D. Option D"
+    ],
+    "correct": [
+      1, 2
+    ],
+    "order": 0,
+    "strength": 10,
+    "bad": 0,
+    "good": 0,
+    "total": 0,
+    "ratio": 0
+  }
+]
